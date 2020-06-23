@@ -4,7 +4,7 @@
 - spring boot, JPA, gradle의 기술을 활용하기
 - mysql을 gradle에 세팅하여 활용하기
 - thymeleaf와 bootstrap 템플릿 적용하여 활용하기
-- flyway를 통해 database schema 쉽게 관리하기
+- flyway를 통해 database schema 관리하기
 
 
 개발환경
