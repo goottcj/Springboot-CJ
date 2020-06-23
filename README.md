@@ -8,10 +8,10 @@
 
 
 개발환경
- -SpringBoot 2.3.1
- -java 1.8
- -MySQL
- -Gradle 3.0
+ - SpringBoot 2.3.1
+ - java 1.8
+ - MySQL
+ - Gradle 3.0
  
  사용방법
  
