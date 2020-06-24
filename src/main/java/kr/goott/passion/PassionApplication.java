@@ -15,17 +15,6 @@ public class PassionApplication {
 
 	public static void main(String[] args) {
 		SpringApplication.run(PassionApplication.class, args);
-		
+		System.out.println("hello boot");
 	}
-
-	@Bean
-    public SqlSessionFactory sqlSessionFactory(DataSource dataSource) throws Exception{
-        SqlSessionFactoryBean sessionFactory = new SqlSessionFactoryBean();
-        sessionFactory.setDataSource(dataSource);
-        
-        Resource[] res = new PathMatchingResourcePatternResolver().getResources("classpath:mappers/*Mapper.xml");
-        sessionFactory.setMapperLocations(res);
-        
-        return sessionFactory.getObject();
-    }
 }
