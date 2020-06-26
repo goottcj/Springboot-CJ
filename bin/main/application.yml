@@ -30,4 +30,8 @@ spring:
           descriptor:
             sql:
               BasicBinder: TRACE
+
+##devtools
+spring.devtools.livereload.enabled : true
+spring.devtools.restart.enabled : false
     
