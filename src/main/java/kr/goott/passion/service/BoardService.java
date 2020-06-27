@@ -1,11 +1,27 @@
 package kr.goott.passion.service;
 
-import kr.goott.passion.dto.BoardDto;
 
+
+import javax.transaction.Transactional;
+
+import org.springframework.stereotype.Service;
+
+import kr.goott.passion.domain.repository.BoardRepository;
+import kr.goott.passion.dto.BoardDto;
+import lombok.AllArgsConstructor;
+
+@AllArgsConstructor
+@Service
 public class BoardService {
 
-	public void savePost(BoardDto boardDto) {
-		// TODO Auto-generated method stub
+	private BoardRepository boardRepository;
+	
+	
+	@Transactional
+	public Long savePost(BoardDto boardDto){
+		//return BoardRepository.save(boardDto.toEntity()).getId();
 	}
+	
+	
 
 }
