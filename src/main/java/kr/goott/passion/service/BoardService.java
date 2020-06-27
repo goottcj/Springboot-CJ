@@ -10,18 +10,15 @@ import kr.goott.passion.domain.repository.BoardRepository;
 import kr.goott.passion.dto.BoardDto;
 import lombok.AllArgsConstructor;
 
+
 @AllArgsConstructor
 @Service
 public class BoardService {
+    private BoardRepository boardRepository;
 
-	private BoardRepository boardRepository;
-	
-	
-	@Transactional
-	public Long savePost(BoardDto boardDto){
-		//return BoardRepository.save(boardDto.toEntity()).getId();
-	}
-	
-	
-
+    @Transactional
+    public Long savePost(BoardDto boardDto) {
+        return boardRepository.save(boardDto.toEntity()).getId();
+    }
+    
 }

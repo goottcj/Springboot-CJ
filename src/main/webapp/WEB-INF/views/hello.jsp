@@ -12,7 +12,5 @@
 안녕하세요. 
 hello jsp입니다..
 
-<img src='/static/image/github.png' >
-
 </body>
 </html>
