@@ -1,27 +1,22 @@
-## 포트 설정
 server:
   port: 8082
   
-
-## Database설정
-
 spring:
   datasource:
     driver-class-name: com.mysql.cj.jdbc.Driver
     url: jdbc:mysql://localhost:3306/todolist?serverTimezone=UTC&characterEncoding=UTF-8
     username: passion
     password: passion1234
-    
-## jpa 설정
-  jpa:
+
+jpa:
     database-platform: org.hibernate.dialect.MySQL5InnoDBDialect
     open-in-view: false
     show-sql: true
     hibernate:
       format_sql: true
       ddl-auto: create
-      
-   logging:
+
+logging:
   level:
     org:
       hibernate:
@@ -31,7 +26,6 @@ spring:
             sql:
               BasicBinder: TRACE
 
-##devtools
 spring.devtools.livereload.enabled : true
 spring.devtools.restart.enabled : false
     

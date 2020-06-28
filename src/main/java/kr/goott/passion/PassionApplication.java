@@ -10,5 +10,6 @@ public class PassionApplication {
 
 	public static void main(String[] args) {
 		SpringApplication.run(PassionApplication.class, args);
+		System.out.println("hello boot");
 	}
 }
